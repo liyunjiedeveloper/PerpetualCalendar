@@ -18,32 +18,4 @@ ApplicationWindow {
     Component.onCompleted: {
         showFullScreen();
     }
-    //退出
-    Item {
-        width: 20;
-        height: 20;
-        anchors {
-            top: parent.top;
-            right: parent.right;
-        }
-
-        MouseArea {
-            anchors.fill: parent;
-            onClicked: {
-                Qt.quit();
-            }
-        }
-    }
-    //日期
-
-    //时间
-    Clock {
-        id: clock;
-        height: parent.height;
-        width: parent.width;
-        anchors {
-            top: parent.top;
-            left: parent.left;
-        }
-    }
 }
